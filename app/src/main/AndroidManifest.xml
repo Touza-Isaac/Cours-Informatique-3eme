@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sintel.informatique3me">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Sujet_Examen"
+            android:label="Sujets d'examen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.informatique3me.Examen" />
+        </activity>
+
+        <activity android:name=".LeconActivity"
+            android:label="Titres de leçons">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.informatique3me.Cours" />
+        </activity>
+
+        <activity android:name=".Integration"
+            android:label="Fiches d'intégration">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.informatique3me.MainActivity" />
+        </activity>
+
+        <activity android:name=".FicheIntegration"
+            android:label="Fiche d'intégration">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.informatique3me.Integration" />
+        </activity>
+
+        <activity android:name=".Examen"
+            android:label="Sujets d'examen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.informatique3me.MainActivity" />
+        </activity>
+
+        <activity android:name=".Cours"
+            android:label="Cours">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.informatique3me.MainActivity" />
+        </activity>
+
+        <activity android:name=".Corriges"
+            android:label="Corrigés des exercices">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.informatique3me.MainActivity" />
+        </activity>
+
+        <activity android:name=".ContenuLecon"
+            android:label="Contenu de la leçon">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.informatique3me.LeconActivity" />
+        </activity>
+
+        <activity android:name=".APropos"
+            android:label="A Propos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sintel.informatique3me.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Accueil" />
+    </application>
+
+</manifest>

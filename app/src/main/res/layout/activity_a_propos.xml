@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".APropos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="252dp"
+            android:src="@mipmap/logo" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informations sur l'auteur"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_auteur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+            <TextView
+                android:id="@+id/nom_auteur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/image_auteur"
+                android:layout_alignTop="@+id/image_auteur"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="Touza Isaac"/>
+
+            <ImageView
+                android:id="@+id/image_localisation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nom_auteur"
+                android:layout_marginTop="27dp"
+                android:layout_alignTop="@id/image_auteur"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/ic_place_black_24dp" />
+
+            <TextView
+                android:id="@+id/text_localisation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/image_localisation"
+                android:layout_alignTop="@+id/image_localisation"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="Maroua, Cameroun"/>
+
+            <ImageView
+                android:id="@+id/image_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nom_auteur"
+                android:layout_marginTop="27dp"
+                android:layout_alignTop="@id/image_localisation"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/ic_phone_black_24dp" />
+
+            <TextView
+                android:id="@+id/numero_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/image_phone"
+                android:layout_alignTop="@+id/image_phone"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="+237 691 805 321 / +237 672 277 579"/>
+
+            <ImageView
+                android:id="@+id/image_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nom_auteur"
+                android:layout_marginTop="27dp"
+                android:layout_alignTop="@id/image_phone"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/ic_mail_outline_black_24dp" />
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/image_mail"
+                android:layout_alignTop="@+id/image_mail"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="isaac_touza@outlook.fr"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_fermer"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Fermer"
+            android:onClick="Fermer"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+</ScrollView>

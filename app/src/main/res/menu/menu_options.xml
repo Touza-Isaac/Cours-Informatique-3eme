@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu"
+        android:title="menu"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_menu_black_24dp">
+        <menu>
+    <item
+        android:id="@+id/Partager"
+        android:title="Partager"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:onClick="Partager"/>
+
+    <item
+        android:id="@+id/propos"
+        android:title="A propos"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:onClick="propos"/>
+
+   <item
+       android:id="@+id/Quitter"
+       android:title="Fermer"
+       android:icon="@drawable/ic_exit_to_app_black_24dp"
+       android:onClick="Quitter"/>
+        </menu>
+</item>
+</menu>

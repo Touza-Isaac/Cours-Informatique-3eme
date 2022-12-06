@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Informatique 3ème</string>
+    <string name="description">
+        L\'application <b>Informatique 3ème</b> est mise sur pied par le <b>Laboratoire Informatique du Sahel (LIS)</b>. Elle vous permet
+        d\'avoir accès facilement à vos cours d\'informatique, des exercices d\'intégrations, des sujets d\'informatique au BEPC avec leurs corrigés.
+    </string>
+
+    <string name="corriges">Corrigés</string>
+    <string name="integration">Intégration</string>
+    <string name="cours">Cours</string>
+    <string name="examen">Sujets d\'examen</string>
+</resources>
